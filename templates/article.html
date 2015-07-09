@@ -31,11 +31,13 @@
                             // under {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                             {% endfor %}
+                            </br>
+                            {{ article.locale_date }}
                         </p>
                 </header>
             </section>
             {{ article.content }}
-            <a href="#" class="go-top">Go Top</a>
+            <!--<a href="#" class="go-top">Go Top</a>-->
             {% include 'disqus.html' %}
             {% include 'footer.html' %}
         </div>
